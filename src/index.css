@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.float {
+  animation: float-animation 2.5s infinite ease-in-out;
+}
+
+@keyframes float-animation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5%);
+  }
+}
+* {
+  background-color: #222224;
+  color: white;
+}
+.home {
+  text-align: center;
+}
+
+.home__title {
+  color: red;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 6px;
+  margin-top: 4vh;
+}
+
+.form__input {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 6px;
+}
+
+.form__button {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 8px;
+  cursor: wait;
+}
+.home__error {
+  color: red;
+  text-align: center;
+}
+
+.pokemon__card {
+  cursor: pointer;
+  width: 400px;
+  text-align: center;
+  border: 1px solid;
+  margin: 20px;
+}
+.page {
+  margin: 22px;
+  cursor: wait;
+}
+.--current_page {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  width: 30px;
+  padding: 5px;
+}
+.user-greeting {
+  color: red;
+  font-weight: bold;
+}
+.containter__button {
+  margin: 10px;
+}
+.logOut__button,
+.search_button {
+  background-color: red;
+  color: white;
+  height: 45px;
+  width: 70px;
+  border-radius: 15px;
+  cursor: wait;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.inputs__container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.input {
+  border: 1px solid white;
+  border-radius: 7px;
+  width: 20rem;
+  height: 35px;
+  background-color: white;
+  color: black;
+  margin: 10px;
+}
+.detail__name {
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+}
+.detail__container-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.pokemonsList__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pokemon__name {
+  font-size: 2rem;
+}
+.stats__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.stat-container {
+  margin: 15px;
+}
+.detail__img-container {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+.detail__img {
+  width: 110px;
+  margin: 15px;
+}
+
+.select__pokemon {
+  margin-right: 60px;
+  background-color: gray;
+  border-radius: 10px;
+  height: 40px;
+  cursor: wait;
+}
+.header__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 30px;
+}
+
+.choose__container {
+}
